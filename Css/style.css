@@ -9,11 +9,11 @@ body{
 
 
 .navbox{
-    background: url(https://fondosmil.com/fondo/15487.jpg)no-repeat;
+    background: url(https://noticias.infurma.es/wp-content/uploads/2016/12/LA-PRIMERA_11.jpg)no-repeat;
     background-size: cover;
     width: 100%;
     height: 110vh; 
-    padding: 5px;
+    padding: 10px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -34,7 +34,14 @@ body{
 .nav{
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: center;  
+}
+
+.nav p{
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    word-spacing: 1vw;
 }
 
 .logo{
@@ -54,4 +61,40 @@ body{
     color: aliceblue;
     width: 170px;
     height: 35px;
+}
+
+.letterbox{
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letterbox p{
+    width: 60%;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 35px;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.slide{
+    width: 100%;
+    height: 90vh;
+    background: url(https://media.traveler.es/photos/61c5d52fffc04ac0ad2208f4/16:9/w_2560%2Cc_limit/2AB9DD5.jpg)no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide img{
+    height: 40px;
+}
+
+.slide img:hover{
+    cursor: pointer;
+
 }
