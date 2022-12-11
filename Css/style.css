@@ -4,7 +4,10 @@
 }
 
 body{
-    height:500vh;
+    /* height:500vh; */
+    display: flex;
+    flex-flow: wrap;
+    align-content: flex-start;
 }
 
 
@@ -45,17 +48,20 @@ body{
 }
 
 .logo{
-    height: 15px;
+    height: auto;
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
     align-items: center;
+    justify-content: center;
 }
 
+.logo img{
+  height: 550px;
+}
 
 .logo a{
     text-decoration: none;
-    border-style: solid;
-    border-radius: 2px;
+    border-style:  solid;
     font-size: 20px;
     text-align: center;
     color: aliceblue;
@@ -64,7 +70,8 @@ body{
 }
 
 .letterbox{
-  height: 70vh;
+  padding: 100px;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,19 +89,59 @@ body{
 
 .slide{
     width: 100%;
-    height: 90vh;
-    background: url(https://media.traveler.es/photos/61c5d52fffc04ac0ad2208f4/16:9/w_2560%2Cc_limit/2AB9DD5.jpg)no-repeat;
-    background-size: cover;
+    height: 900px;
+    overflow: hidden;
+}
+
+.slide ul{ 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 400%;
+    animation: slideimg  16s  infinite  alternate ease-in-out; 
+}
+
+.slide li{
+    list-style: none;
+    width: 100%;
 }
 
 .slide img{
-    height: 40px;
+    width: 100%;
 }
 
-.slide img:hover{
-    cursor: pointer;
+@keyframes slideimg {
+         /* Imagen 1*/
+     0%{margin-left: 0%;}
+     20%{margin-left: 0%;}
+         /* Imagen 2*/
+     25%{margin-left: -100%;}
+     45%{margin-left: -100%;}
+        /* Imagen 3*/
+     50%{margin-left: -200%;}
+     70%{margin-left: -200%;}
+         /*Imgane 4*/
+     75%{margin-left: -300%;}
+     100%{margin-left: -300%;}
+}
 
+
+.row{
+    background: red;
+    height: 100vh;
+    width: 100%;
+}
+
+.top{
+ align-self: flex-end;  
+ height: 50px;
+ width: 100%;
+ background: black;
+ cursor: pointer;
+ text-decoration: none;
+}
+
+.top p{
+    padding: 10px;
+    text-align: center; 
+    font-size: 25px;
+    color:white;
 }
