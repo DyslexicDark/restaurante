@@ -59,11 +59,12 @@ body{
 }
 
 .logo a{
+    background-color: green;
     text-decoration: none;
     border-style:  solid;
     font-size: 20px;
     text-align: center;
-    color: aliceblue;
+    color: black;
     width: 170px;
     height: 35px;
 }
@@ -177,6 +178,12 @@ background-color:currentColor;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
+}
+
+.copyright {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
 }
 
 .top{
