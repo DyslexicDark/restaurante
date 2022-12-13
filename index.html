@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
     <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/appiStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&family=Sirin+Stencil&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
      <body>
           <div class="navbox">
@@ -42,10 +44,18 @@
                     <li> <img src="./img/tea-g43d93e29a_1920.jpg"></li>
                </ul>
           </div>
-          <script src="./js/app.js"></script>
+     
           <div class="row">
                <div id="mesa" class="row-container-left">
                     <h2>Reservar Mesa</h2>
+                    <div class="weather">
+                       <div id="weather-box">
+                            <img src="" alt="" id="weather-icon">
+                            <h1 id="weather-tem"> </h1>
+                            <h1>Salamanca</h1>
+                            <h1 id="weather-des"> </h1>  
+                       </div>
+                    </div>
                     <div class="container-table">
                          <h4>Datos necesarios</h4>
                          <form action="insertar.php" method="post" class="format">
@@ -95,5 +105,6 @@
           <a href="#" class="top"> 
                <p>Inicio</p>   
           </a>
+          <script src="./js/app.js"></script>
      </body>
 </html>

@@ -1,0 +1,24 @@
+.weather{
+    float: right;
+    width: 40%;
+    height: auto; 
+    background: #1E9600;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 20px; 
+}
+#weather-box {
+    display: flex;
+    flex-flow: wrap ;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Roboto Serif', serif;
+    font-family: 'Sirin Stencil', cursive;
+    font-family: 'Teko', sans-serif;
+}
+
+#weather-icon{
+  height: 250px;
+}
