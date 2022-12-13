@@ -15,11 +15,7 @@
                </div>
                <div class="center">
                     <div class="nav">
-                    <p>About &nbsp;</p>
-                    <p>Menus &nbsp;</p>
-                    <P>Mesas Exclusivas&nbsp;</P>
-                    <p>Bono Regalo&nbsp;</p>
-                    <p>Tienda&nbsp;</p>
+                    <p>Bienvenidos!&nbsp;</p>
                     </div>
                     <div class="logo"> 
                          <img src="./img/logo.png" alt="" srcset="">   
@@ -27,7 +23,7 @@
                     </div>
                </div>
                <div class="left">
-                    <h3>Dependecias</h3>
+                    <h3>Admin </h3>
                </div>
           </div> 
           <div class="letterbox">
@@ -52,58 +48,35 @@
                     <h2>Reservar Mesa</h2>
                     <div class="container-table">
                          <h4>Datos necesarios</h4>
-                         <div class="select">
-                              <select name="format" class="format">
-                                   <option selected disabled>Cantidad de personas</option>
-                                   <option value="El Rayo">1 a 2</option>
-                                   <option value="La Herradura">2 a 4</option>
-                                   <option value="Restaurante">4 a 6</option>
-                                   <option value="Restaurante">mas de 6...</option>
-                              </select>
-                         </div>
-                    </div>
-                    <div class="container-table">
-                         <h4>Reservar Mesa</h4>
-                         <div class="select">
-                              <select name="format" class="format">
-                                   <option selected disabled>Seleciona el Restaurante</option>
-                                   <option value="El Rayo">El Rayo</option>
-                                   <option value="La Herradura"> La Herradura</option>
-                                   <option value="Restaurante">Restaurante</option>
-                              </select>
-                              <select name="" class="format">
-                                   <option  value="">8:00 am</option>
-                                   <option  value="">9:00 am</option>
-                                   <option  value="">10:00 am</option>
-                                   <option  value="">11:00 am</option>
-                                   <option  value="">12:00 pm</option>
-                                   <option  value="">1:00 pm</option>
-                                   <option  value="">2:00 pm</option>
-                                   <option  value="">3:00 pm</option>
-                                   <option  value="">4:00 pm</option>
-                                   <option  value="">5:00 pm</option>
-                                   <option  value="">6:00 pm</option>
-                                   <option  value="">7:00 pm</option>
-                                   <option  value="">8:00 pm</option>
-                                   <option  value="">9:00 pm</option>
-                              </select>
-                              <select name="" class="format">
-                                   <option value="">1 persona</option>
-                                   <option value="">2 personas</option>
-                                   <option value="">4 personas</option>
-                                   <option value="">6 personas</option>
-                                   <option value="">8 personas</option>
-                                   <option value="">10 personas</option>
-                              </select>
-                              <input type="date" name="" id="">
-                              <button class="button">Encuntra la Mesa</button>
-                         </div>
-                    </div>
-                    <div class="container-table">
-                         <h4>Dejar pedido los platillos o pedirlos en la mesa</h4>
-                    </div>
-                    <div class="container-table">
-                         <h4></h4>
+                         <form action="insertar.php" method="post" class="format">
+                              <input type="text" name="nombre" class="form-control mb-3" placeholder="Nombre">
+                              <input type="text" name="ap_pat" class="form-control mb-3" placeholder="Apellido Paterno">
+                              <input type="text" name="ap_mat" class="form-control mb-3" placeholder="Apellido Materno">
+                         </form>
+                         <select name="" class="format">
+                              <option  value="">8:00 am</option>
+                              <option  value="">9:00 am</option>
+                              <option  value="">10:00 am</option>
+                              <option  value="">11:00 am</option>
+                              <option  value="">12:00 pm</option>
+                              <option  value="">1:00 pm</option>
+                              <option  value="">2:00 pm</option>
+                              <option  value="">3:00 pm</option>
+                              <option  value="">4:00 pm</option>
+                              <option  value="">5:00 pm</option>
+                              <option  value="">6:00 pm</option>
+                              <option  value="">7:00 pm</option>
+                              <option  value="">8:00 pm</option>
+                              <option  value="">9:00 pm</option>
+                         </select>
+                         <input type="date" name="" id="">
+                         <select name="format" class="format">
+                              <option selected disabled>Cantidad de personas</option>
+                              <option value="2">1 a 2</option>
+                              <option value="4">2 a 4</option>
+                              <option value="8">mas de 4...</option>
+                         </select>
+                         <input type="submit" value="Reservar" class="btn btn-primary">
                     </div>
                </div>
                <div class="row-container-center">
