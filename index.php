@@ -30,12 +30,12 @@
         <div class="row">
             <div class="col-md-3">
                 <h3>Nuevo Mesero</h3>
-                <form action="insertar.php" method="post">
-                    <input type="text" name="nombre" class="from-control mb-3" placeholder="Nombres">
-                    <input type="text" name="ap_pat" class="from-control mb-3" placeholder="Apellido Paterno">
-                    <input type="text" name="ap_mat" class="from-control mb-3" placeholder="Apellido Materno">
-                    <input type="text" name="telefono" class="from-control mb-3" placeholder="Ej. 4327438212">
-                    <input type="text" name="correo" class="from-control mb-3" placeholder="example@gmail.com">
+                <form action="./php/insertar.php" method="post">
+                    <input type="text" name="mesero_nom" class="from-control mb-3" placeholder="Nombres">
+                    <input type="text" name="mesero_ap_pat" class="from-control mb-3" placeholder="Apellido Paterno">
+                    <input type="text" name="mesero_ap_mat" class="from-control mb-3" placeholder="Apellido Materno">
+                    <input type="text" name="mesero_telefono" class="from-control mb-3" placeholder="Ej. 4327438212">
+                    <input type="text" name="mesero_correo" class="from-control mb-3" placeholder="example@gmail.com">
                     <input type="submit" value="Agregar empleado" class="btn btn-primary">
                 </form>
             </div>
@@ -82,7 +82,7 @@
                                         <a href="./php/meseros.php?id=<?php echo $row['mesero_id'] ?>"
                                             class="btn btn-warning">Editar</a>
                                         |
-                                        <a href="./php/delete.php?id=<?php echo $row['mesero_id'] ?>"
+                                        <a href="./php/delete.php?meseros_id=<?php echo $row['mesero_id'] ?>"
                                             class="btn btn-danger">Borrar</a>
                                     </td>
                                 </tr>
@@ -94,17 +94,15 @@
             </div>
         </div>
     </div>
-    
-
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-3">
                 <h3>Nueva Mesa</h3>
-                <form action="insertar.php" method="post">
+                <form action="./php/insertar.php" method="post">
                     <input type="text" name="mesa_nombre" class="from-control mb-3" placeholder="Ej. C1,M1,G1">
                     <input type="text" name="mesa_capacidad" class="from-control mb-3" placeholder="2,4,8">
                     <input type="text" name="mesa_disponible" class="from-control mb-3" placeholder="D/ND">
-                    <input type="submit" value="Agregar empleado" class="btn btn-primary">
+                    <input type="submit" value="Agregar Mesa" class="btn btn-primary">
                 </form>
             </div>
             <div class="col-md-8">
@@ -141,7 +139,7 @@
                                         <a href="./php/mesas.php?id=<?php echo $row['mesa_nombre'] ?>"
                                             class="btn btn-warning">Editar</a>
                                         |
-                                        <a href="delete.php?id=<?php echo $row['mesa_nombre'] ?>"
+                                        <a href="./php/delete.php?mesa_nombre=<?php echo $row['mesa_nombre'] ?>"
                                             class="btn btn-danger">Borrar</a>
                                     </td>
                                 </tr>
@@ -153,13 +151,11 @@
             </div>
         </div>
     </div>
-
-
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-3">
                 <h3>Nueva Comida/Bebida</h3>
-                <form action="insertar.php" method="post">
+                <form action="./php/insertar.php" method="post">
                     <input type="text" name="com_beb_producto" class="from-control mb-3" placeholder="Platillo/Bebida">
                     <input type="text" name="com_beb_categoria" class="from-control mb-3" placeholder="Categoria: Bebida,Comida,Postre">
                     <input type="text" name="com_beb_precio" class="from-control mb-3" placeholder="Ej. 60.25">
@@ -207,7 +203,7 @@
                                         <a href="./php/comidas.php?id=<?php echo $row['com_beb_id'] ?>"
                                             class="btn btn-warning">Editar</a>
                                         |
-                                        <a href="delete.php?id=<?php echo $row['com_beb_id'] ?>"
+                                        <a href="./php/delete.php?com_beb_id=<?php echo $row['com_beb_id'] ?>"
                                             class="btn btn-danger">Borrar</a>
                                     </td>
                                 </tr>
@@ -219,8 +215,6 @@
             </div>
         </div>
     </div>
-
-
     <div class="container mt-5">
         <div class="row">
             <div>
@@ -274,7 +268,7 @@
                                         <a href="./php/clientes.php?id=<?php echo $row['cli_id'] ?>"
                                             class="btn btn-warning">Editar</a>
                                         |
-                                        <a href="delete.php?id=<?php echo $row['cli_id'] ?>"
+                                        <a href="./php/delete.php?cli_id=<?php echo $row['cli_id'] ?>"
                                             class="btn btn-danger">Borrar</a>
                                     </td>
                                 </tr>

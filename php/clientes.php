@@ -29,8 +29,10 @@
                 <input type="text" name="cli_ap_pat" class="from-control mb-3" value="<?php echo $cliente['cli_ap_pat']?>" placeholder="Apellido Paterno">
                 <input type="text" name="cli_ap_mat" class="from-control mb-3" value="<?php echo $cliente['cli_ap_mat']?>" placeholder="Apellido Materno">
                 <input type="text" name="cli_num_personas" class="from-control mb-3" value="<?php echo $cliente['cli_num_personas']?>" placeholder="Ej. 4327438212">
-                <input type="text" name="cli_fecha" class="from-control mb-3" value="<?php echo $cliente['cli_fecha']?>" placeholder="example@gmail.com">
+                <input type="date" name="cli_fecha" class="from-control mb-3" value="<?php echo $cliente['cli_fecha']?>" placeholder="example@gmail.com">
                 <input type="text" name="cli_pago" class="from-control mb-3" value="<?php echo $cliente['cli_pago']?>" placeholder="D/ND">
+                <input type="text" name="cli_mesa_id"class="from-control mb-3" value="<?php echo $cliente['cli_mesa_id']?>" placeholder="C,M,G + Numero">
+                <input type="text" name="cli_mesero_id" class="from-control mb-3" value="<?php echo $cliente['cli_mesero_id']?>" placeholder="ID">
                 <input type="submit" value="Actualizar" class="btn btn-primary btn-block">
             </form>
         </div>
