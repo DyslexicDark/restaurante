@@ -24,13 +24,13 @@
         <div class="row">
             <h3 class="text-center">Actualizar Mesero</h3>
             <form action="update.php" method="post" class="text-center">
-                <input type="hidden" name="id" value="<?php echo $mesero['mesero_id']?>">
-                <input type="text" name="nombre"class="from-control mb-3" value="<?php echo $mesero['mesero_nom']?>" placeholder="Nombres">
-                <input type="text" name="ap_pat" class="from-control mb-3" value="<?php echo $mesero['mesero_ap_pat']?>" placeholder="Apellido Paterno">
-                <input type="text" name="ap_mat" class="from-control mb-3" value="<?php echo $mesero['mesero_ap_mat']?>" placeholder="Apellido Materno">
-                <input type="text" name="telefono" class="from-control mb-3" value="<?php echo $mesero['mesero_telefono']?>" placeholder="Ej. 4327438212">
-                <input type="text" name="correo" class="from-control mb-3" value="<?php echo $mesero['mesero_correo']?>" placeholder="example@gmail.com">
-                <input type="text" name="disponible" class="from-control mb-3" value="<?php echo $mesero['mesero_disponible']?>" placeholder="D/ND">
+                <input type="hidden" name="mesero_id" value="<?php echo $mesero['mesero_id']?>">
+                <input type="text" name="mesero_nom"class="from-control mb-3" value="<?php echo $mesero['mesero_nom']?>" placeholder="Nombres">
+                <input type="text" name="mesero_ap_pat" class="from-control mb-3" value="<?php echo $mesero['mesero_ap_pat']?>" placeholder="Apellido Paterno">
+                <input type="text" name="mesero_ap_mat" class="from-control mb-3" value="<?php echo $mesero['mesero_ap_mat']?>" placeholder="Apellido Materno">
+                <input type="text" name="mesero_telefono" class="from-control mb-3" value="<?php echo $mesero['mesero_telefono']?>" placeholder="Ej. 4327438212">
+                <input type="text" name="mesero_correo" class="from-control mb-3" value="<?php echo $mesero['mesero_correo']?>" placeholder="example@gmail.com">
+                <input type="text" name="mesero_disponible" class="from-control mb-3" value="<?php echo $mesero['mesero_disponible']?>" placeholder="D/ND">
                 <input type="submit" value="Actualizar" class="btn btn-primary btn-block">
             </form>
         </div>

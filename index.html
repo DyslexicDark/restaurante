@@ -25,7 +25,7 @@
                     </div>
                </div>
                <div class="left">
-                    <h3>Admin </h3>
+                    <button type="button" class="btn btn-dark" onclick="location.href='/index.php'">Admin</button>
                </div>
           </div> 
           <div class="letterbox">
@@ -58,35 +58,14 @@
                     </div>
                     <div class="container-table">
                          <h4>Datos necesarios</h4>
-                         <form action="insertar.php" method="post" class="format">
-                              <input type="text" name="nombre" class="form-control mb-3" placeholder="Nombre">
-                              <input type="text" name="ap_pat" class="form-control mb-3" placeholder="Apellido Paterno">
-                              <input type="text" name="ap_mat" class="form-control mb-3" placeholder="Apellido Materno">
+                         <form action="./php/insertar.php" method="post" class="format">
+                              <input type="text" name="cli_nombre" class="form-control mb-3" placeholder="Nombre">
+                              <input type="text" name="cli_ap_pat" class="form-control mb-3" placeholder="Apellido Paterno">
+                              <input type="text" name="cli_ap_mat" class="form-control mb-3" placeholder="Apellido Materno">
+                              <input type="date" name="cli_fecha" class="form-control mb-3" placeholder="YYYY-MM-DD">
+                              <input type="text" name="cli_num_personas" class="text-cemter form-control mb-3" placeholder="Cantidad de personas">
+                              <input type="submit" value="Reservar" class="form-control mb-3 btn btn-primary">
                          </form>
-                         <select name="" class="format">
-                              <option  value="">8:00 am</option>
-                              <option  value="">9:00 am</option>
-                              <option  value="">10:00 am</option>
-                              <option  value="">11:00 am</option>
-                              <option  value="">12:00 pm</option>
-                              <option  value="">1:00 pm</option>
-                              <option  value="">2:00 pm</option>
-                              <option  value="">3:00 pm</option>
-                              <option  value="">4:00 pm</option>
-                              <option  value="">5:00 pm</option>
-                              <option  value="">6:00 pm</option>
-                              <option  value="">7:00 pm</option>
-                              <option  value="">8:00 pm</option>
-                              <option  value="">9:00 pm</option>
-                         </select>
-                         <input type="date" name="" id="">
-                         <select name="format" class="format">
-                              <option selected disabled>Cantidad de personas</option>
-                              <option value="2">1 a 2</option>
-                              <option value="4">2 a 4</option>
-                              <option value="8">mas de 4...</option>
-                         </select>
-                         <input type="submit" value="Reservar" class="btn btn-primary">
                     </div>
                </div>
                <div class="row-container-center">
